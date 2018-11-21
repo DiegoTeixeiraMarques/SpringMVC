@@ -1,0 +1,5 @@
+package com.mballem.curso.boot.domain;
+
+public abstract class Cargo extends AbstractEntity<Long> {
+
+}

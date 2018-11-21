@@ -1,0 +1,12 @@
+package com.mballem.curso.boot.web.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller  //Identifica a classe como um Controller na aplicação
+public class HomeController {
+	
+	public String home() {
+		return "/home"
+	}
+
+}

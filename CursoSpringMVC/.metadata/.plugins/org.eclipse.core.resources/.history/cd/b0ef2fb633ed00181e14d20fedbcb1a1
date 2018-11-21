@@ -1,0 +1,10 @@
+package com.mballem.curso.boot.domain;
+
+import javax.persistence.*;
+
+public abstract class Cargo extends AbstractEntity<Long> {
+	
+	@Column
+	private String nome;
+
+}

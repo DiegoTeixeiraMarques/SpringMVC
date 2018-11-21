@@ -1,0 +1,7 @@
+package com.mballem.curso.boot.domain;
+
+import java.io.Serializable;
+
+public class AbstractEntity<ID extends Serializable> {    // Quando trabalha com ORM é bnoa prática extender a classe Serializable do pacote io dento da interface
+
+}

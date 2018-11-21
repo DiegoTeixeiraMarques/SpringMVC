@@ -1,0 +1,8 @@
+package com.mballem.curso.boot.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Funcionario extends AbstractEntity<Long> {
+
+}

@@ -1,0 +1,31 @@
+package com.mballem.curso.boot.domain;
+
+import javax.persistence.*;
+
+public abstract class Cargo extends AbstractEntity<Long> {
+	
+	@Column(name = "nome", nullable = false, unique = true, length = 60)
+	private String nome;
+	
+	@ManyToOne									// indica a relação muitos pra um
+	@JoinColumn(name = "id_departamento_fk")	// Informa qual a chave estrangeira na entidade Departamento
+	private Departamento departamento;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Departamento getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(Departamento departamento) {
+		this.departamento = departamento;
+	}
+	
+
+}

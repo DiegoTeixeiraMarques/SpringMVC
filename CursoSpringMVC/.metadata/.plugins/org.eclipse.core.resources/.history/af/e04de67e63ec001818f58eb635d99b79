@@ -1,0 +1,10 @@
+package web.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller										// Indica que a classe é um controller na aplicação
+@RequestMapping("/departamentos")				// Indica path que o dispatcher vai procurar
+public class DepartamentoController {
+
+}

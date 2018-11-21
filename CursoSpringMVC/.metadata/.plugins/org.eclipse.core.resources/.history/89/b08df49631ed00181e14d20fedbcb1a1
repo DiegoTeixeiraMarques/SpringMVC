@@ -1,0 +1,11 @@
+package com.mballem.curso.boot.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.*;               // Pacote com as notações JPA
+
+public class AbstractEntity<ID extends Serializable> implements Serializable {    // Quando trabalha com ORM é bnoa prática extender a classe Serializable do pacote io dento da interface
+	
+	@Id
+	private ID id;
+}

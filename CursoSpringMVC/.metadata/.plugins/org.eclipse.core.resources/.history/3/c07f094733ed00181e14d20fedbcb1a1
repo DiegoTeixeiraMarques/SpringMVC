@@ -1,0 +1,21 @@
+package com.mballem.curso.boot.domain;
+
+import javax.persistence.*;   		// Notações JPA
+
+@Entity						  		// Informa que esta classe é mapeada pela JPA
+@Table(name = "DEPARTAMENTOS")		// Atribui o nome DEPARTAMENTOS a classe criada no BD
+public class Departamento extends AbstractEntity<Long> {
+	
+	//ID herdado da super classe
+	@Column(name = "nome", nullable = false)
+	private String nome;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+}
